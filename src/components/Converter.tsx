@@ -14,7 +14,6 @@ export default function Converter() {
   const [toCurrency, setToCurrency] = useState("");
   const [result, setResult] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
   const [lastUpdate, setLastUpdate] = useState<string | null>(null);
   const [nextUpdate, setNextUpdate] = useState<string | null>(null);
   const [lang, setLang] = useState<"ru" | "kz">("ru");
@@ -28,12 +27,10 @@ export default function Converter() {
           setLastUpdate(data.time_last_update_utc);
           setNextUpdate(data.time_next_update_utc);
         } else {
-          setError("Failed to load rates");
         }
         setLoading(false);
       })
       .catch(() => {
-        setError("Error fetching data");
         setLoading(false);
       });
   }, []);
