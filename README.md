@@ -1,5 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Currency-converter(Конвертер валют) in ru and kz
+Has "USD", "KZT", "EUR", "CNY", "THB", "TRY", "RUB"
 ## Getting Started
 
 First, run the development server:
