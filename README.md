@@ -1,3 +1,4 @@
+https://konverval.netlify.app/
 
 Currency-converter(Конвертер валют) in ru and kz
 Has "USD", "KZT", "EUR", "CNY", "THB", "TRY", "RUB"
